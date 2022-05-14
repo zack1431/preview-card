@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      /* background-color: #0A0C1B; */
+      background:linear-gradient(to left bottom,rgb(249, 38, 144),#A464D3);
+      color: #F8FAF9;
+      text-align: center;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .ins{
+      color:#A464D3
+    }
+    .main{
+      margin: 10px;
+      background-color: #1C1938;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 800px;
+    }
+    .card-img{
+      object-position: 40px 40px;
+      width: 100%;
+      min-height: 100px;
+      max-height: auto;
+      position: relative;
+      
+    }
+    img{
+      max-width: 100%;
+      height: 100%;
+    }
+    .card-content{
+      padding: 10px;
+    }
+    .info{
+      color: #7D7B95;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .su{
+      text-transform: uppercase;
+      color: #7D7B95;
+      font-size: 15px;
+    }
+    h2{
+      font-size: 28px;
+    }
+    .num{
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .stats{
+      line-height: 0.7;
+      margin-bottom: 40px;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0.5;
+      transition: .5s ease;
+      background-color: #7C439D;
+    }
+    @media (min-width:430px) {
+      .flex{
+        display: flex;
+        justify-content: space-between;
+      }
+
+    }
+    @media (min-width:750px) {
+      .main{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left!important;
+        height: 300px;
+      }
+      .flex{
+        display: flex;
+        justify-content: space-between;
+      }
+      .card-img{
+        width: 100%;
+        max-height: auto;
+      }
+      .card-content{
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="main">
+    <div class="card-img"><img src="images/image-header-mobile.jpg">
+      <div class="overlay">
+      </div>
+    </div>
+    <div class="card-content">
+      <h2>Get <span class="ins">insights</span> that help your business grow.</h2>
+    
+      <div class="info">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</div>
+      <div class="flex">
+        <div class="stats"><p class="num">10k+</p> <p class="su">companies</p></div>
+        <div class="stats"><p class="num">314</p> <p class="su">templates</p></div>
+        <div class="stats"><p class="num">12m+</p> <p class="su">queries</p></div>
+      </div>
+    </div>
+  </section>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
